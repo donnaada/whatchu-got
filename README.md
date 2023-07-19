@@ -38,4 +38,6 @@ Apps will require the following permissions:
 
 - Run `npm test` to see tests running.
 
-<!-- #### Wireframes -->
+#### Wireframes
+
+![Wireframe](./assets/wireframe.png)
