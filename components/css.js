@@ -64,4 +64,55 @@ export const css = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
   },
+  modalContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  },
+  modalScanner: {
+    backgroundColor: 'white',
+    height: '20%',
+    width: '90%',
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  alignRight:{
+    marginLeft: 'auto',
+  },
+  itemContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 5,
+    marginBottom: 10,
+    borderRadius: 8,
+  },
+  itemInfoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+
+  },
+  itemImage: {
+    width: 50,
+    height: 50,
+    marginRight:5
+  },
+  itemDetails: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  itemName: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  itemUPC: {
+    fontSize: 14,
+    marginBottom: 5,
+  },
+  itemQty: {
+    fontSize: 14,
+  },
 });

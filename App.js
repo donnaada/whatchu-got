@@ -3,11 +3,12 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createAppContainer } from 'react-navigation';
-import HomeScreen from './components/home';
 import AddItemScreen from './components/addItem';
 import InventoryScreen from './components/inventory';
-import { InventoryProvider } from './InventoryContext';
+import viewItem from './components/viewItem';
+import { InventoryProvider } from './Inventory';
 import SplashScreen from './components/splash';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -19,7 +20,8 @@ export default function App() {
           <Stack.Screen name='App Home' component={SplashScreen} />
           <Stack.Screen name='Inventory' component={InventoryScreen} />
           <Stack.Screen name='AddItem' component={AddItemScreen} />
-        </Stack.Navigator>
+          <Stack.Screen name='View Item' component={viewItem} />
+        </Stack.Navigator> 
 
       </InventoryProvider>
     </NavigationContainer>
